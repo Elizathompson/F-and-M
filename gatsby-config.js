@@ -11,9 +11,9 @@ module.exports = {
       resolve: `gatsby-source-shopify`,
       options: {
         // The domain name of your Shopify shop.
-        shopName: `[ferrier-and-mansell]`,
+        shopName: `Ferrier-and-Mansell`,
         // The storefront access token
-        accessToken: `[08d0a206a55cb940897486dfeb3544cb]`,
+        accessToken: `522066795b0e606d1b90f781f1f0b9c6`,
       },
     },
   ],
