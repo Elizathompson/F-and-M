@@ -1,0 +1,25 @@
+.navBar {
+  display: inline;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+.layoutContainer {
+  margin: 3rem auto;
+  max-width: 950px;
+  padding: 0 1rem;
+}
+
+footer {
+  padding-top: 1rem;
+  ul {
+    list-style: none;
+    float: left;
+  }
+}
+
+h3 {
+  font-family: $logoFont;
+}

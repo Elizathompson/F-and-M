@@ -16,5 +16,14 @@ module.exports = {
         accessToken: `522066795b0e606d1b90f781f1f0b9c6`,
       },
     },
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: 'egm0pcy'
+        }
+      }
+    },
   ],
 }
