@@ -16,19 +16,23 @@ export default function Layout({ children }) {
   return (
     <div className="layoutContainer">
       <header>
-        <Link to="/">
-          <h3 className="navBar">FERRIER & MANSELL</h3>
-        </Link>
-        <ul className="navBar" style={{ listStyle: `none`, float: `right` }}>
+
+        <ul className="navBar links">
           <ListLink to="/">Home</ListLink>
           <ListLink to="/about/">About</ListLink>
           <ListLink to="/products/">Shop</ListLink>
         </ul>
+
+        <Link to="/">
+          <h2 className="navBar logo">FERRIER <span>&</span> MANSELL</h2>
+        </Link>
+
+
       </header>
       {children}
       <footer>
-      <ul>
-          <ListLinkHorizontal to="/about/">FAQs</ListLinkHorizontal>
+      <ul classname="footerLinks">
+          <ListLinkHorizontal to="/FAQs/">FAQs</ListLinkHorizontal>
           <ListLinkHorizontal to="/contact/">Contact</ListLinkHorizontal>
         </ul>
       </footer>
