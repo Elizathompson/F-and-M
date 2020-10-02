@@ -1,12 +1,13 @@
-import React from "react"
-import Layout from "../components/layout"
-import "../styles/mystyles.scss"
+import React from 'react'
+import Layout from '../components/layout'
+import '../styles/mystyles.scss'
+import logo from '/Users/elizathompson/development/F-and-M/src/styles/assets/logo-without-name.jpeg'
 
 export default function Home() {
-  return(
+  return (
     <Layout>
       <div className="logoImg">
-        <img src="src/styles/assets/mainLogo.png" alt="logo"></img>
+        <img src={ logo } alt="logo"></img>
       </div>
     </Layout>
   )
