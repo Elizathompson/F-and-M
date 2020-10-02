@@ -1,6 +1,6 @@
-.navBar {
-  display: inline;
-}
+// .navBar {
+//   display: inline;
+// }
 
 header {
   margin-bottom: 1.5rem;
@@ -12,26 +12,48 @@ header {
 }
 
 .layoutContainer {
-  margin: 3rem auto;
+  margin: 1rem auto;
   max-width: 950px;
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.generalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
-  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 1rem;
+  background-color: $primaryGreen;
   .footerLinks {
     list-style: none;
     float: left;
   }
+  text-align: center;
+  margin-top: 10px;
+
 }
 
 .logo {
   font-family: $logoFont;
   font-weight: 100;
-  font-size: 38px;
   color: $primaryPink;
   letter-spacing: 3px;
   span {
     color: $primaryGreen;
   }
 }
+
+.logoContainer {
+  align-self: center;
+}
+
+
+

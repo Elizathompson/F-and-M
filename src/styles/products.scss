@@ -1,0 +1,29 @@
+.product {
+  max-width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.mainProductImg {
+  padding: 10px;
+}
+
+.productImgTag {
+  border-radius: 10px;
+}
+
+.productTitle {
+  color: $primaryPink;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.productPrice {
+  color: $primaryGreen;
+  font-weight: bold;
+}
+
+.productsList {
+  display: flex;
+  flex-wrap: wrap;
+}
