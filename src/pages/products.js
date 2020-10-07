@@ -2,27 +2,27 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-
 const ProductsPage = ({ data }) => (
-  <Layout>
-    <div className="productsList">
-      <ul>
-        {data.allShopifyProduct.edges.map(({ node }) => (
-          <div className="card product" key={node.shopifyId}>
-            <li >
-              <h3>
-                <Link className="productTitle" to={`/product/${node.handle}`}>{node.title}</Link>
-                <div className="mainProductImg">
-                  <img className="productImgTag"src={node.images[0].originalSrc}></img>
-                </div>
-              </h3>
-              <p>{node.description}</p>
-              <p className="productPrice">£{node.priceRange.minVariantPrice.amount}</p>
 
-            </li>
-          </div>
-        ))}
-      </ul>
+  <Layout title="Products...">
+
+    <div className="productsList">
+
+      {data.allShopifyProduct.edges.map(({ node }) => (
+        <div className="product" key={node.shopifyId}>
+
+          <Link to={`/product/${node.handle}`}>
+            <div className="mainProductImg">
+              <img className="productImgTag"src={node.images[0].originalSrc}></img>
+            </div>
+            <h3 className="productTitle" >{node.title.toUpperCase()}</h3>
+            <hr className="smallBreak"></hr>
+            <p className="productPrice">£{node.priceRange.minVariantPrice.amount}</p>
+          </Link>
+        </div>
+
+      ))}
+
     </div>
   </Layout>
 )
@@ -35,6 +35,7 @@ export const query = graphql`
     edges {
       node {
         title
+        handle
         images {
           originalSrc
         }

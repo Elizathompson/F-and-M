@@ -1,10 +1,13 @@
 @import "~bulma/bulma.sass";
 $primaryPink: #EA5C6E;
+$primaryPalePink: #f3a0aa;
 $primaryGreen: #D7DB35;
+$primaryPaleGreen: #e4e776;
 $primaryGrey: #3d3d3d;
 $logoFont: adobe-ming-std;
 @import "./common.scss";
 @import "./products.scss";
+
 
 body {
   font-family: source-han-sans-traditional, sans-serif;

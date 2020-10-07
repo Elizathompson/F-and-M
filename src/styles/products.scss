@@ -1,29 +1,77 @@
+
+
 .product {
   max-width: 350px;
   padding: 10px;
   border-radius: 10px;
+  transition: all .2s ease-in-out;
+  display: flex;
+  justify-content: center;
 }
 
-.mainProductImg {
-  padding: 10px;
+.product:hover {
+  transform: scale(1.01);
 }
 
-.productImgTag {
-  border-radius: 10px;
-}
 
 .productTitle {
   color: $primaryPink;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  font-family: $logoFont;
+}
+.prodPage {
+  font-size: 45px;
 }
 
 .productPrice {
-  color: $primaryGreen;
-  font-weight: bold;
+  color: $primaryGrey;
+  font-weight: 600;
+  text-align: center;
+}
+
+.productDescription {
+  text-align: justify;
 }
 
 .productsList {
   display: flex;
   flex-wrap: wrap;
+  width: 950px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.personalButton {
+  margin-top: 20px;
+  width: 120px;
+  background-color: white;
+  color: $primaryPink;
+  font-weight: 600;
+  transition: all .2s ease-in-out;
+}
+
+.personalButton:hover {
+  background-color: $primaryPink;
+  color: white;
+  border: solid 2px $primaryPink;
+  transform: scale(1.05);
+}
+
+
+.carouselContainer {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 400px;
 }

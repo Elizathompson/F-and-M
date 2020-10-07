@@ -13,7 +13,7 @@ const ListLinkVertical = props => (
   </li>
 )
 
-export default function Layout({ children }) {
+export default function Layout({ children, title }) {
   const [isActive, setisActive] = React.useState(false)
   return (
     <>
@@ -63,8 +63,15 @@ export default function Layout({ children }) {
 
           </div>
         </nav>
+      </div>
 
-        <div className="generalContainer">
+
+      {/* <div className="photoHeader">
+        <p>{title}</p>
+      </div> */}
+      <div className="generalContainer">
+        <div className="layoutContainer">
+          <hr className="pageBreak"></hr>
           {children}
         </div>
 
