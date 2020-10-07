@@ -4,10 +4,10 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 const ProductsPage = ({ data }) => (
 
-  <Layout title="Products...">
-
+  <Layout>
+    {/* <div className="productsTitle">PRODUCTS...</div>
+    <hr className="pageBreak"></hr> */}
     <div className="productsList">
-
       {data.allShopifyProduct.edges.map(({ node }) => (
         <div className="product" key={node.shopifyId}>
 

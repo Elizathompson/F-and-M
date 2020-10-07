@@ -1,0 +1,24 @@
+.aboutTitle {
+  font-size: 40px;
+  font-family: $logoFont;
+  color: $primaryPink;
+  font-style: italic;
+}
+
+.aboutWriting {
+  text-align: justify;
+  font-size: 25px;
+}
+
+.wrapperTile {
+  display: flex;
+  flex-direction: column;
+}
+
+.grandmaPic {
+  height: 300px;
+}
+
+.elizaPic {
+  height: 500px;
+}
